@@ -1,5 +1,9 @@
 <RCC>
     <qresource prefix="/">
         <file>img/Save.ico</file>
+        <file>img/new.png</file>
+        <file>img/salved.png</file>
+        <file>img/salir.png</file>
+        <file>img/iconoo.png</file>
     </qresource>
 </RCC>
