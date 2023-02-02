@@ -88,7 +88,7 @@ void Principal::dibujar()
     painter.setPen(pincel);
 
     float prom1=promedio(nota1,nota2,nota3);
-    ui->promedio->setText("Promedio: " + QString::number(prom1));
+    ui->promedio->setText(QString::number(prom1));
     int altoN4=this->getAlto(prom1);
     int aumN4=this->aum(altoN4);
     painter.drawLine(x+25,aumN4+50,450,aumN4+50);
@@ -113,9 +113,7 @@ void Principal::dibujar()
         intervalo=QString::number(i);
         painter.drawText(x-10,b+50,intervalo);
     }
-    painter.drawText(x+85, y+475,"( Nota 1 )");
-    painter.drawText(x+205,y+475,"( Nota 2 )");
-    painter.drawText(x+325,y+475,"( Nota 3 )");
+
 }
 
 int Principal::getAlto(int valor)
